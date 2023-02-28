@@ -51,6 +51,9 @@ function App() {
       </div>
       <br></br>
       <h4 id='note-info'>(Search stops at 20 references. Default search is Python)</h4>
+
+      <br></br>
+      <h5 id='note-info'> Created by Chayne White</h5>
       
       {console.log('in main portion:')}
       {console.log(`book amount == ${books.length}`)}

@@ -15,7 +15,9 @@ function App() {
   //async funct to call api and retrieve data:
   const searchBooks = async (title) => {
     console.log('tapping into searchBooks:')
-    const response = await fetch(`${API_URL}q=${title}&key=${import.meta.env.VITE_REACT_APP_GOOGLE_API_KEY}&maxResults=20`)
+    const response = await fetch(`${API_URL}q=${title}&key=AIzaSyBVK65ybvB3P6Yt-WpzVYGSSsVPfAiYRqs&maxResults=20`)
+
+    // const response = await fetch(`${API_URL}q=${title}&key=${import.meta.env.VITE_REACT_APP_GOOGLE_API_KEY}&maxResults=20`)
     
     const data = await response.json();
     console.log(data)
